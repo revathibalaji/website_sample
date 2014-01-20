@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <!--  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+  <!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
+  <title>FixNix | Information Security Management System for Small & Medium Businesses</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/portfoliostyle.css" />
+  <link rel="stylesheet" href="css/roll_over.css" />
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+ 
+  <!-- LayerSlider styles -->
+  <link rel="stylesheet" href="layerslider/css/layerslider.css" type="text/css">
+   <!-- jQuery with jQuery Easing, and jQuery Transit JS -->
+  <!--<script src="/layerslider/jQuery/jquery.js" type="text/javascript"></script>-->
+  <script src="layerslider/js/jquery-easing-1.3.js" type="text/javascript"></script>
+  <script src="layerslider/js/jquery-transit-modified.js" type="text/javascript"></script>
+  <!-- LayerSlider from Kreatura Media with Transitions -->
+  <script src="layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
+  <script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+  
+  <script src="js/jquery.scrollTo-1.4.3.1-min.js" type="text/javascript"></script>
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+  <script src="js/vendor/modernizr.custom.76532.js"></script>
+
+  <style>
+        #map_canvas {
+            width: 400px;
+            height: 250px;
+        }
+        #map_canvas2 {
+            width: 400px;
+            height: 250px;
+        }
+  </style>
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script>
+        function initialize() {
+            var map_canvas = document.getElementById('map_canvas');
+            var map_canvas2 = document.getElementById('map_canvas2');
+            var map_options = {
+                center: new google.maps.LatLng(17.503651, 78.363623),
+                zoom: 8,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map_options2 = {
+                center: new google.maps.LatLng(12.936359,79.161106),
+                zoom: 8,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(map_canvas, map_options)
+            var map = new google.maps.Map(map_canvas2, map_options2)
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+
+</head>
+<body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="header" class="parentContainer container">
+        <div class="header-container">
+            <a href="index.html"><div class="content-logo">
+            	<div class="logo"></div>
+                <div class="company-name"></div>
+            </div></a>
+            <div class="block-menu">
+                 <select class="navegation_resp" onchange="location.hash=this.options[this.selectedIndex].value;">
+                    <option value="index.html" selected="selected">Home</option>
+                    <option value="#ancla1" class="second_item">Audit </option>
+                    <option value="#ancla2" class="second_item">ISO 27001</option>
+                    <option value="#ancla3" class="second_item">Virtual CISO</option>
+                    <option value="#ancla5" class="second_item">Platform</option>
+                    <option value="#ancla4" class="second_item">Open Source Security</option>
+                    <option value="#ancla6" class="second_item">Management Security</option>
+                </select>
+            </div>
+            <div class="menu-select">
+                <nav>
+                    <ol class="contentMenu">
+                        
+                          <li>
+                            <a href="#ancla1"><div class="menubtn">
+                                <div class="contentbtn">audit</div>
+                            </div></a>
+                        </li>
+                          <li>
+                           <a href="#ancla2"><div class="menubtn">
+                                <div class="contentbtn">ISO 27001</div>
+                            </div></a>
+                        </li>
+                        <li>
+                            <a href="#ancla4"><div class="menubtn">
+                                <div class="contentbtn">Open Source Security</div>
+                            </div></a>
+                        </li>
+                        <li>
+                            <a href="#ancla3"><div class="menubtn">
+                                <div class="contentbtn">Virtual CISO</div>
+                            </div></a>
+                        </li>
+                        <li>
+                            <a href="#ancla5"><div class="menubtn">
+                                <div class="contentbtn">Platform</div>
+                            </div></a>
+                        </li>
+                          
+                          <li>
+                            <a href="#ancla6"><div class="menubtn">
+                                <div class="contentbtn">Management Security Services</div>
+                            </div></a>
+                        </li>
+                        <li>
+                            <a href="index.html"><div class="menubtn1">
+                                <div class="contentbtn">home</div>
+                            </div></a>
+                        </li>
+                        <!-- <li>
+                            <a href="http://fixrnix.wordpress.com"><div class="menubtn">
+                                <div class="contentbtn">blog</div>
+                            </div></a>
+                        </li> -->
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div> <!-- end header-->
+    <br>
+    <br>
+    
+    <section id="about" class="bg-one"><div id="ancla1"></div>
+        <div class="section-one">
+        	<div class="title-one">Audit Services</div>
+            <div class="separator"><div class="line line-1"></div></div>
+            <img src="img/Audit-process-final-pic1.png" alt="" title="">
+        </div>
+        
+    </section><!-- end about -->
+
+    <div class="works-container bg-two"><div id="ancla2"></div> 
+    <div class="section-two bottom-works">
+    <div class="works-header">
+        <div class="title-two">ISO 27001</div>
+        <div class="separator"><div class="line line-2"></div></div>
+            <div class="data-content-two">
+                
+            </div>
+        </div>
+
+    <div id="portfolio" class="container">
+      <div class="section portfoliocontent">
+        <section id="options" class="clearfix">
+            
+        </section> 
+        <div id="container2" class="clearfix">
+          <div class="inici"></div>
+          <div class="element design websites">
+            <div class="ch-grid" id="portfolio1.html">
+                  <div class="work-info"><span>ISO Training</span></div>
+                  <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-1"></div><![endif]--> 
+                  <!--[if gt IE 9]><!--><div class="ch-item ch-img-35"></div><!--<![endif]--> 
+            </div>
+            </div>
+            <div class="element websites">
+               <div class="ch-grid" id="portfolio2.html">
+                    <div class="work-info"><span>Documentation</span></div>
+                    <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-2"></div> <![endif]--> 
+                    <!--[if gt IE 9]><!--><div class="ch-item ch-img-36"></div><!--<![endif]-->
+                </div>
+              </div>
+            <div class="element design websites">
+               <div class="ch-grid" id="portfolio3.html">
+                    <div class="work-info"><span>Methodology</span></div>
+                    <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-3"></div> <![endif]--> 
+                    <!--[if gt IE 9]><!--><div class="ch-item ch-img-37"></div><!--<![endif]-->
+                </div>
+            </div>
+              
+            <div class="element motion design">
+                 <div class="ch-grid" id="portfolio4.html">
+                  <div class="work-info"><span>Risk Assessment</span></div>
+                    <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-4"></div> <![endif]--> 
+                    <!--[if gt IE 9]><!--><div class="ch-item ch-img-38"></div><!--<![endif]-->
+                </div>
+            </div>
+            
+            <div class="element branding websites">
+               <div class="ch-grid" id="portfolio5.html">
+                    <div class="work-info"><span>Rating Risk Treatment Plan</span></div>
+                    <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-5"></div> <![endif]--> 
+                    <!--[if gt IE 9]><!--><div class="ch-item ch-img-39"></div><!--<![endif]-->
+                </div>
+            </div>
+            
+            <div class="element design">
+                <div class="ch-grid" id="portfolio6.html">
+                    <div class="work-info"><span>Documentation & Training<br></span></div>
+                    <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-6"></div> <![endif]--> 
+                    <!--[if gt IE 9]><!--><div class="ch-item ch-img-40"></div><!--<![endif]-->
+                </div>  
+            </div>
+            
+            
+    
+    <div class="final"></div>
+    </div>
+    
+        <!-- Project -->
+        <!-- <div id="project-show"></div> -->
+        <!-- <div class="project-window"> -->
+           <!--  <div class="project-content"></div> --><!-- AJAX Dinamic Content -->
+        <!-- </div> --><!-- end Project -->
+        
+ </div> <!-- #container -->
+                
+            </div> <!-- /END ISOTOPE PORTFOLIO-->
+    </div><!-- end portfolio -->
+</div>
+
+
+<section id="team" class="container"><div id="ancla4"></div>
+        <div class="section-one">
+            <div class="title-one">Open Source Security Tools</div>
+            <div class="separator"><div class="line line-1"></div></div>
+            <div class="data-content-one">
+                
+            </div>
+            <div class="data-content-new">
+            <center><ul>
+                <li>Nagios</li>
+                <li>Splunk</li>
+                <li>Snorby</li>
+                <li>GRC(Governance Risk and Compliance)</li>
+<!--                 <li>BCM(Business Continuity Management)</li>
+                <li>HRM(Human Resource Management)</li>
+                <li>School Management System</li>
+                <li>Hospital Management System</li> -->
+            </ul></center>
+
+            </div>
+           
+        </div> 
+    </section> <!-- end team -->
+    
+	
+    <section id="freebies" class="bg-two"><div id="ancla3"></div>
+        <div class="section-two no-bottom">
+            <div class="title-two">Virtual CISO</div>
+            <div class="separator"><div class="line line-2"></div></div>
+            <div class="data-content-two">
+                Chief Information Security Officer(CISO)
+            </div>
+        </div>
+        <div class="window">
+            <div class="content projectsContent">
+                <div class="anythingSlider anythingSlider-minimalist-round activeSlider" style="width: 100%; height: 500px; display: block; opacity: 1;">
+                    <div class="anythingWindow" style="width: 100%; height: 100%;">
+                        <ul id="slider" class="anythingBase horizontal" style="width: 21600px;">
+                        
+                            <li class="caseCount cloned panel" style="width: 1542px; height: auto;">
+                               <img src="img/vciso/1.png" alt="" title="">
+                            </li><!-- end Recent Work 1 -->
+                                                        
+                            <li class="caseCount panel activePage" style="width: 1542px; height: auto;">
+                              <img src="img/vciso/2.png" alt="" title="">
+                            </li><!-- end Recent Work 2 -->
+                            
+                            <li class="caseCount panel activePage" style="width: 1542px; height: auto;">
+                              <img src="img/vciso/3.png" alt="" title="">
+                            </li><!-- end Recent Work 3 -->
+                            
+                            <li class="caseCount panel activePage" style="width: 1542px; height: auto;">
+                              <img src="img/vciso/4.png" alt="" title="">
+                            </li><!-- end Recent Work 4 -->
+                            
+                            <li class="caseCount panel activePage" style="width: 1542px; height: auto;">
+                              <img src="img/vciso/5.png" alt="" title="">
+                            </li><!-- end Recent Work 5 -->
+                            
+                            <li class="caseCount panel activePage" style="width: 1542px; height: auto;">
+                              <img src="img/vciso/6.png" alt="" title="">
+                            </li><!-- end Recent Work 6 -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--  end Slider Recent Works -->
+            <div class="controller">
+            	<div class="prev"></div>
+                <div class="bullets">
+                	<ul>
+                    <!-- Bullets -->
+                    </ul>
+                </div>
+                <div class="next"></div>
+            </div>
+            <br><br>
+            <br>
+            
+            <!-- <div class="ls-s-3 btn-one" style="top: 655px; left: 30%; margin-left: 37%; margin-bottom: 5%; slidedirection : top; slideoutdirection : top; delayin : 750;">
+            <a href="itgrc.html"><span>IT GRC</span></a>
+            <a href="egrc.html"><span>EGRC</span></a>
+        </div> -->
+        </div>
+    </section><!-- end freebies --> 
+    
+	
+    <div class="works-container bg-one"><div id="ancla5"></div> 
+    <div class="section-two bottom-works">
+    <div class="works-header">
+        <div class="title-one">Platforms</div>
+        <div class="separator"><div class="line line-2"></div></div>
+            <div class="data-content-two">
+                
+            </div>
+        </div>
+
+    <div id="portfolio" class="container">
+      <div class="section portfoliocontent">
+        <section id="options" class="clearfix">
+            
+        </section> 
+        <div id="container2" class="clearfix">
+          <div class="inici"></div>
+          <div class="element design websites">
+            <div class="ch-grid" id="portfolio1.html">
+                  <div class="work-info"><span>User friendly</span></div>
+                  <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-1"></div><![endif]--> 
+                  <!--[if gt IE 9]><!--><!-- <div class="ch-item ch-img-41"></div> --><!--<![endif]--> 
+                  <img src="img/icon/1.png">
+                  <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User friendly Interface</h3><br><br><br><br>
+                  <p>FixNix is created with users in mind. Anyone with basic knowledge in computers and email can start using FixNix within ten minutes of their first login.</p>
+            </div>
+            </div>
+            <div class="element websites">
+               <div class="ch-grid" id="portfolio2.html">
+                    <div class="work-info"><span>Ruby on Rails</span></div>
+                    <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-2"></div> <![endif]--> 
+                    <!--[if gt IE 9]><!--><!-- <div class="ch-item ch-img-1"></div> --><!--<![endif]-->
+                    <img src="img/icon/2.png">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Developed in Ruby on Rails</h3><br><br><br><br>
+                    <p>FixNix is developed on the powerful Ruby on Rails framework and gives us an excellent framework on which we can provide you with a very stable and reliable product.</p>
+                </div> 
+              </div>
+            <div class="element design websites">
+               <div class="ch-grid" id="portfolio3.html">
+                    <div class="work-info"><span>Customization</span></div>
+                    <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-3"></div> <![endif]--> 
+                    <!--[if gt IE 9]><!--><!-- <div class="ch-item ch-img-3"></div> --><!--<![endif]-->
+                    <img src="img/icon/3.png">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Optimized for customization</h3><br><br><br><br>
+                    <p>We know that each and every school or college is different from each other in their system and process. FixNix is engineered to be customization friendly.</p>
+                </div>
+            </div>
+              
+            <div class="element motion design">
+                 <div class="ch-grid" id="portfolio4.html">
+                  <div class="work-info"><span>Opensource</span></div>
+                    <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-4"></div> <![endif]--> 
+                    <!--[if gt IE 9]><!--><!-- <div class="ch-item ch-img-4"></div> --><!--<![endif]-->
+                    <img src="img/icon/4.png">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Freedom Of Opensource</h3><br><br><br><br>
+                    <p>The basic version of FixNix is available as free and open source so that the passionate community of open source enthusiasts can help to improve it.</p>
+                </div>
+            </div>
+            
+            <div class="element branding websites">
+               <div class="ch-grid" id="portfolio5.html">
+                    <div class="work-info"><span>Cloud Servers</span></div>
+                    <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-5"></div> <![endif]--> 
+                    <!--[if gt IE 9]><!--><!-- <div class="ch-item ch-img-5"></div> --><!--<![endif]-->
+                    <img src="img/icon/5.png">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hosted on Cloud Servers</h3><br><br><br><br>
+                    <p>FixNix is a web application. So there is no need of any extra hardware or technical maintenance staff. All you need is a computer with internet connection.</p>
+                </div>
+            </div>
+            
+            <div class="element design">
+                <div class="ch-grid" id="portfolio6.html">
+                    <div class="work-info"><span>Secure</span></div>
+                    <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-6"></div> <![endif]--> 
+                    <!--[if gt IE 9]><!--><!-- <div class="ch-item ch-img-6"></div> --><!--<![endif]-->
+                    <img src="img/icon/6.png">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Secure and Reliable</h3><br><br><br><br>
+                    <p>You can trust FixNix to store your data. FixNix satisfies all modern web security standards. Already 20million users trust FixNix to host their data.</p>
+                </div>  
+            </div>
+            
+            <div class="element motion design">
+               <div class="ch-grid" id="portfolio7.html">
+                    <div class="work-info"><span>Amazing support</span></div>
+                    <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-7"></div> <![endif]--> 
+                    <!--[if gt IE 9]><!--><!-- <div class="ch-item ch-img-7"></div> --><!--<![endif]-->
+                    <img src="img/icon/7.png">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amazing support</h3><br><br><br><br>
+                    <p>The FixNix team is available 24/7 to help you whenever you encounter a problem or have a question about FixNix. We have well defined SLA with service credits.</p>
+                </div> 
+            </div>
+            
+            <div class="element websites branding">
+               <div class="ch-grid" id="portfolio8.html">
+                    <div class="work-info"><span>Features</span></div>
+                    <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-8"></div> <![endif]--> 
+                    <!--[if gt IE 9]><!--><!-- <div class="ch-item ch-img-8"></div> --><!--<![endif]-->
+                    <img src="img/icon/8.png">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wide range of features</h3><br><br><br><br>
+                    <p>FixNix has got more features than any other student information system. There are plenty of plugins available to enhance features of FixNix.</p>
+                </div>
+            </div>
+                  
+            <div class="element design">
+                <div class="ch-grid" id="portfolio9.html">
+                    <div class="work-info"><span>Flexible Pricing</span></div>
+                    <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-9"></div> <![endif]--> 
+                    <!--[if gt IE 9]><!--><!-- <div class="ch-item ch-img-9"></div> --><!--<![endif]-->
+                    <img src="img/icon/9.png">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flexible Pricing</h3><br><br><br><br>
+                    <p>You can buy the FixNix plan that suits your specific requirements. You can start with basic plans and can upgrade to pro plans when required.</p>
+                </div>
+            </div>
+
+            <div class="element design">
+                <div class="ch-grid" id="portfolio9.html">
+                    <div class="work-info"><span>Plugin</span></div>
+                    <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-9"></div> <![endif]--> 
+                    <!--[if gt IE 9]><!--><!-- <div class="ch-item ch-img-9"></div> --><!--<![endif]-->
+                    <img src="img/icon/10.png">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plugin marketplace</h3><br><br><br><br>
+                    <p>The FixNix Marketplace is a one-stop shop for tools you need to run your institution. Add functionality to FixNix using the different plugins available in this marketplace./p>
+                </div>
+            </div>
+
+            <div class="element design">
+                <div class="ch-grid" id="portfolio9.html">
+                    <div class="work-info"><span>Multiple languages Support</span></div>
+                    <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-9"></div> <![endif]--> 
+                    <!--[if gt IE 9]><!--><!-- <div class="ch-item ch-img-9"></div> --><!--<![endif]-->
+                    <img src="img/icon/9.png">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiple languages Support</h3><br><br><br><br>
+                    <p>FixNix is available in different languages including Spanish, Portuguese, Japanese, Hindi, German, Arabic, Marati and many more.</p>
+                </div>
+            </div>
+
+            <div class="element design">
+                <div class="ch-grid" id="portfolio9.html">
+                    <div class="work-info"><span>Mobile versions</span></div>
+                    <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-9"></div> <![endif]--> 
+                    <!--[if gt IE 9]><!--><!-- <div class="ch-item ch-img-9"></div> --><!--<![endif]-->
+                    <img src="img/icon/9.png">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile versions</h3><br><br><br><br>
+                    <p>Use FixNix on the go from any location using the mobile web app. It supports all smartphones and works from the browser. Nothing to install. Nothing to upgrade.</p>
+                </div>
+            </div>
+    
+    <div class="final"></div>
+    </div>
+    
+        <!-- Project -->
+        <!-- <div id="project-show"></div> -->
+        <!-- <div class="project-window"> -->
+           <!--  <div class="project-content"></div> --><!-- AJAX Dinamic Content -->
+        <!-- </div> --><!-- end Project -->
+        
+ </div> <!-- #container -->
+                
+            </div> <!-- /END ISOTOPE PORTFOLIO-->
+    </div><!-- end portfolio -->
+</div>    
+       
+<div class="works-container bg-two"><div id="ancla6"></div> 
+	<div class="section-two bottom-works">
+	<div class="works-header">
+        <div class="title-two">Management Security Services</div>
+        <div class="separator"><div class="line line-2"></div></div>
+            <div class="data-content-two">
+            	
+            </div>
+    	</div>
+
+    <div id="portfolio" class="container">
+      <div class="section portfoliocontent">
+        <section id="options" class="clearfix">
+            
+        </section> 
+        <div id="container2" class="clearfix">
+          <div class="inici"></div>
+          <div class="element design websites">
+            <div class="ch-grid" id="portfolio1.html">
+            	  <div class="work-info"><span>Management Security Services</span></div>
+                  <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-1"></div><![endif]--> 
+                  <!--[if gt IE 9]><!--><div class="ch-item ch-img-41"></div><!--<![endif]--> 
+        	</div>
+            </div>
+            <div class="element websites">
+               <div class="ch-grid" id="portfolio2.html">
+            	    <div class="work-info"><span>Categories of MSS</span></div>
+                    <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-2"></div> <![endif]--> 
+                    <!--[if gt IE 9]><!--><div class="ch-item ch-img-42"></div><!--<![endif]-->
+                </div> 
+              </div>
+            <div class="element design websites">
+               <div class="ch-grid" id="portfolio3.html">
+                    <div class="work-info"><span>Categories of MSS</span></div>
+                    <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-3"></div> <![endif]--> 
+                    <!--[if gt IE 9]><!--><div class="ch-item ch-img-43"></div><!--<![endif]-->
+                </div> 
+            </div>
+              
+            <div class="element motion design">
+                <div class="ch-grid" id="portfolio4.html">
+                  <div class="work-info"><span>Categories of MSS</span></div>
+                    <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-4"></div> <![endif]--> 
+                    <!--[if gt IE 9]><!--><div class="ch-item ch-img-44"></div><!--<![endif]-->
+                </div>
+            </div>
+            
+            <div class="element branding websites">
+               <div class="ch-grid" id="portfolio5.html">
+                    <div class="work-info"><span>Categories of MSS</span></div>
+                    <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-5"></div> <![endif]--> 
+                    <!--[if gt IE 9]><!--><div class="ch-item ch-img-45"></div><!--<![endif]-->
+                </div>
+            </div>
+            
+            <div class="element design">
+                <div class="ch-grid" id="portfolio6.html">
+                    <div class="work-info"><span>Other Devices<br></span></div>
+                    <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-6"></div> <![endif]--> 
+                    <!--[if gt IE 9]><!--><div class="ch-item ch-img-46"></div><!--<![endif]-->
+                </div>
+            </div>
+            
+            
+    
+    <div class="final"></div>
+    </div>
+    
+        <!-- Project -->
+        <!-- <div id="project-show"></div> -->
+        <!-- <div class="project-window"> -->
+           <!--  <div class="project-content"></div> --><!-- AJAX Dinamic Content -->
+        <!-- </div> --><!-- end Project -->
+        
+ </div> <!-- #container -->
+                
+            </div> <!-- /END ISOTOPE PORTFOLIO-->
+    </div><!-- end portfolio -->
+</div>
+
+		
+      
+
+       
+ 
+
+<!-- map -->
+       
+<!-- end map -->
+
+<div id="footer" class="container-one">
+  <div class="footer-line"></div>
+    <div class="newsletter">
+    <h1>Newsletter</h1>     
+    <input type="text" name="newsletter" id="newsletter" value="email address" onclick="if(this.value=='email address') this.value=''" onblur="if(this.value=='') this.value='email address'">
+    <p><a href="http://eepurl.com/tZo9z" target="_blank" class="subscribe">Subscribe</a></p>
+    <div class="credits">© 2013 FIXNIX. ALL RIGHTS RESERVED.</div> <br>
+    <div class="credits"><a href="Privacy.html" style="text-decoration:none">Privacy</a>&nbsp;&nbsp;&nbsp;<a href="Terms.html" style="text-decoration:none">Terms</a></div>    
+    <br>
+    <img src="img/msbizspark.jpg" title="Microsoft Bizspark Winner" style="width:125px; height:50px">&nbsp;&nbsp;&nbsp;
+    <img src="img/ieee.jpg" title="IEEE Cloud Computing Winner" style="width:125px; height:50px">&nbsp;&nbsp;&nbsp;
+    <img src="img/mspartner.jpg" title="Microsoft Partner" style="width:125px; height:50px">&nbsp;&nbsp;&nbsp;
+    </div>
+</div><!-- end footer -->
+<script src="js/plugins.js"></script>
+<script src="js/respond.min.js"></script>
+<script src="js/jquery.inview.js"></script>
+<script src="js/customScripts.js"></script>
+
+
+<!-- LAYERSLIDER -->
+<script type="text/javascript">
+    // jQuery $('document').ready(); function
+    $('document').ready(function(){
+        // Calling LayerSlider on your selected element after the document loaded
+        $('#layerslider').layerSlider({
+ 
+    autoStart               : true,
+    responsive              : true,
+    responsiveUnder         : 959,
+    sublayerContainer       : 0,
+    firstLayer              : 1,
+    twoWaySlideshow         : false,
+    randomSlideshow         : false,
+    keybNav                 : true,
+    touchNav                : true,
+    imgPreload              : true,
+    navPrevNext             : true,
+    navStartStop            : false,
+    navButtons              : false,
+    thumbnailNavigation     : 'hover',
+    tnWidth                 : 100,
+    tnHeight                : 60,
+    tnContainerWidth        : '60%',
+    tnActiveOpacity         : 35,
+    tnInactiveOpacity       : 100,
+    hoverPrevNext           : false,
+    hoverBottomNav          : false,
+    skin                    : 'fullwidth',
+    skinsPath               : 'layerslider/skins/',
+    pauseOnHover            : true,
+    globalBGColor           : 'transparent',
+    globalBGImage           : false,
+    animateFirstLayer       : true,
+    yourLogo                : false,
+    yourLogoStyle           : 'position: absolute; z-index: 1001; left: 10px; top: 10px;',
+    yourLogoLink            : false,
+    yourLogoTarget          : '_blank',
+    loops                   : 0,
+    forceLoopNum            : true,
+    autoPlayVideos          : true,
+    autoPauseSlideshow      : 'auto',
+    youtubePreview          : 'maxresdefault.jpg',
+    showBarTimer        : false,
+    showCircleTimer     : true,
+ 
+    // you can change this settings separately by layers or sublayers with using html style attribute
+ 
+    slideDirection          : 'right',
+    slideDelay              : 4000,
+    durationIn              : 1000,
+    durationOut             : 1000,
+    easingIn                : 'easeInOutQuint',
+    easingOut               : 'easeInOutQuint',
+    delayIn                 : 0,
+    delayOut                : 0		});
+    });
+</script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<!-- isotope -->
+<script src="js/jquery.isotope.min.js"></script>
+<script>
+	
+/*
+	calcul();
+	function calcul(){
+		size=$(window).width();
+		if (size > 959) { tam=4;} else
+		if (size > 767) { tam=3;} else
+		if (size > 479) { tam=2;} else
+		if (size < 480) { tam=1;}
+	}
+  */
+
+  $(function(){
+	
+	var $container = $('#container2');
+
+	$container.isotope({
+	  itemSelector : '.element'
+	});
+	
+/*	$(window).bind("resize", function(){
+	  	vell=tam;
+		calcul();
+		if(vell!=tam){
+			$container.isotope( 'reLayout')
+		}
+	});
+*/
+	
+	var $optionSets = $('#options .option-set'),
+		$optionLinks = $optionSets.find('a');
+
+	$optionLinks.click(function(){
+		$(".project-window").slideUp("slow");
+	  var $this = $(this);
+	  // don't proceed if already selected
+	  if ( $this.hasClass('selected') ) {
+		return false;
+	  }
+	  var $optionSet = $this.parents('.option-set');
+	  $optionSet.find('.selected').removeClass('selected');
+	  $this.addClass('selected');
+
+	  // make option object dynamically, i.e. { filter: '.my-filter-class' }
+	  var options = {},
+		  key = $optionSet.attr('data-option-key'),
+		  value = $this.attr('data-option-value');
+	  // parse 'false' as false boolean
+	  value = value === 'false' ? false : value;
+	  options[ key ] = value;
+	  if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+		// changes in layout modes need extra logic
+		changeLayoutMode( $this, options )
+	  } else {
+		// otherwise, apply new options
+		$container.isotope( options );
+	  }
+	  
+	  return false;
+	});
+  });
+</script>
+
+<!-- Recent Works Slider -->
+
+<!--  end Recent Works Slider -->
+  
+    </body>
+</html>
